@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="theme-color" content="#2196F3">
     <title>Aprede Programación</title>
-    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="shortcut icon" href="../../images/favicon.png">
     <!--
     <link rel="canonical" href="http://www.example.com/">
     -->

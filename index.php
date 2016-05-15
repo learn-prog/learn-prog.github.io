@@ -67,8 +67,7 @@
         </nav>
     </div>
     <main class="mdl-layout__content">
-        <div class="page-content">
-        <!-- Main Content-->
+        <div class="page-content">        <!-- Main Content-->
         <!--Principal Grid-->
         <div class="mdl-grid">
         <!--Spacer-->
@@ -90,7 +89,7 @@
           <div class="mdl-card__supporting-text">
 
                   <pre class="sh_cpp">
-                        0- Inicio<br>
+                        0- Inicio ...<br>
                         1- Escribir "Hola, buenos días";<br>
                         2- Escribir "Hola, buenos días";<br>
                         3- Escribir "Hola, buenos días";<br>
