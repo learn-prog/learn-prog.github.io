@@ -4689,19 +4689,19 @@ fieldset[disabled] .mdl-checkbox .mdl-checkbox__ripple-container .mdl-ripple, .m
     min-height: 64px;
     max-height: 1000px;
     z-index: 3;
-    background:-moz-linear-gradient(#2196f3, #12568b);
+    background-color: rgb(33, 150, 243);
     color: rgb(255, 255, 255);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
     transition-duration: .2s;
     transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     transition-property: max-height, box-shadow
 }
-
+/*
 @media (max-width:720px){
     .mdl-layout__header {
-        background-color: rgb(33, 150, 243);
+
     }
-}
+}*/
 
 @media screen and (max-width: 1024px) {
     .mdl-layout__header {
