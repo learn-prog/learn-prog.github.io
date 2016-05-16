@@ -7,7 +7,7 @@
 }
 
 .custom-layout-backgroud {
-  background-image: url('learn-prog.github.io/images/b.jpg');
+  background-image: url('../images/b.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
