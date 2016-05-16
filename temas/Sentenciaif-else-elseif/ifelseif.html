@@ -62,7 +62,8 @@
         <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="../../index.html"><b>Inicio</b></a>
             <a class="mdl-navigation__link" href="../Variableyalgoritmo/v-a.html"><b>Variables y Algoritmos</b></a>
-            <a class="mdl-navigation__link" href="../Sentenciaif-else-elseif/ifelseif.html"><b>Sentencia If Else y Else If</b></a>
+            <a class="mdl-navigation__link" href="../Sentenciaif-else-elseif/ifelseif.html"><b>Sentencia If Else y Else
+                If</b></a>
             <a class="mdl-navigation__link" href="../Estructurasderepeticion/repitas.html"><b>Estructuras de
                 Repeteción</b></a>
         </nav>
@@ -85,7 +86,8 @@
                 <!--Card-->
 
                 <div
-                        class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col-tablet mdl-cell--8-col-desktop mdl-cell--4-col-phone" style="text-align: justify;">
+                        class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col-tablet mdl-cell--8-col-desktop mdl-cell--4-col-phone"
+                        style="text-align: justify;">
 
                     <div class="mdl-card__title">
                         <h2 class="mdl-card__title-text"><b>Sentencia if-else-elseif</b></h2>
@@ -123,7 +125,7 @@ else {
                         no se cumple ninguna de las condiciones, se ejecuta el else final en caso de existir.<br><br>
 
                         <pre class="sh_cpp">
-                            Ejemplo:
+Ejemplo:
 if (condición) {
    //Bloque de instrucciones; }
 elseif (condicion) {
@@ -134,19 +136,115 @@ else{
 }
                         </pre>
 
+                        <b>Aqui te mostraremos un ejemplo del if-else if, donde podras observar el algoritmo, codigo y prueba del siguien progrma:<br><br>
+                            Realizar un programa que pida un numero y muestre si es positivo, negativo o
+                        cero.</b>
+
+                        <div class="mdl-card__supporting-text card-supporting-text-full-width">
+
+                            <!--Tabs-->
+
+                            <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                                <div class="mdl-tabs__tab-bar">
+                                    <a href="#algoritmo" class="mdl-tabs__tab is-active">Algoritmo</a>
+                                    <a href="#codigo" class="mdl-tabs__tab">Código</a>
+                                    <a href="#" class="mdl-tabs__tab" onclick="numero_pos_neg_cero()">Verificar</a>
+                                    <!--<a href="#ejemplo" class="mdl-tabs__tab">Ejemplo</a>-->
+                                </div>
+
+                                <div class="mdl-tabs__panel is-active" id="algoritmo">
+
+            <pre class="sh_cpp">
+0-Inicio
+  2-Declarar n;
+  3-Escrbir "Introduzca cualquier numero: ";
+  4-Leer= n;
+  5-Si(n&gt;0)
+    {
+    5.1-Escribir "El numero es positivo";
+    }
+  6-De lo contrario si(n&lt;0)
+    {
+     6.1-Escrbir "El numero es negativo";
+    }
+  7-De lo contrario si (n==0)
+    {
+     7.1-Escribir "El numero es cero";
+    }
+8-Fin;
+            </pre>
+                                </div>
+
+                                <div class="mdl-tabs__panel" id="codigo">
+
+            <pre class="sh_cpp">
+#include  &lt;iostream&gt;
+  using namespace std;
+  int main(){
+    int n;
+    cout&lt;&lt;"Introduzca cualquier numero: ";
+    cin&gt;&gt;n;
+    if(n&gt;0)
+    {
+      cout&lt;&lt;"El numero es positivo";
+    }else if (n&lt;0)
+    {
+      cout&lt;&lt;"El numero es negativo";
+    }else if (n==0)
+    {
+      cout&lt;&lt;"El numero es cero";
+    }
+  }
+            </pre>
+                                </div>
+
+                                <div class="mdl-tabs__panel" id="requerimiento">
+                                    <br>
+
+
+                                    <!--Codigo Javascript-->
+
+                                    <script>
+
+                                        function numero_pos_neg_cero() {
+                                            var n = prompt("Introduzca cualquier numero", "");
+                                            if (n > 0 && n != null) {
+                                                alert("El numero es positivo");
+                                            } else if (n < 0) {
+                                                alert("El numero es negativo");
+                                            } else if (n == 0) {
+                                                alert("El numero es cero");
+                                            }
+                                        }
+                                    </script>
+
+                                    <!--Codigo Javascript-->
+
+
+
+                                </div>
+
+                                <!--<div class="mdl-tabs__panel" id="ejemplo">
+
+                                </div>-->
+                            </div>
+
+                            <!--Tabs-->
+
+                        </div>
+
                     </div>
+
+                    <!--Card-->
+
+                    <!--Margin-->
+                    <div class="mdl-cell mdl-cell--1-col-tablet mdl-cell--2-col-desktop mdl-cell--hide-phone"></div>
+                    <!--Margin-->
+                    <!--Spacer-->
+                    <div class="mdl-cell mdl-cell--12-col mdl-cell--hide-phone"></div>
+                    <!--Spacer-->
                 </div>
-
-                <!--Card-->
-
-                <!--Margin-->
-                <div class="mdl-cell mdl-cell--1-col-tablet mdl-cell--2-col-desktop mdl-cell--hide-phone"></div>
-                <!--Margin-->
-                <!--Spacer-->
-                <div class="mdl-cell mdl-cell--12-col mdl-cell--hide-phone"></div>
-                <!--Spacer-->
-            </div>
-            <!--Principal Grid-->
+                <!--Principal Grid-->
     </main>
 </div>
 
