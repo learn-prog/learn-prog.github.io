@@ -61,7 +61,7 @@
         <nav class="mdl-navigation">
             <a class="mdl-navigation__link" href="../../index.html"><b>Incio</b></a>
             <a class="mdl-navigation__link" href="../Variableyalgoritmo/v-a.html"><b>Variable y algoritmo</b></a>
-            <a class="mdl-navigation__link" href=""><b>Sentencia if else y elseif</b></a>
+            <a class="mdl-navigation__link" href="../Sentenciaif-else-elseif/ifelseif.html"><b>Sentencia if else y elseif</b></a>
             <a class="mdl-navigation__link" href="../Estructurasderepeticion/repitas.html"><b>Estructuras de Repetecion</b></a>
             <a class="mdl-navigation__link" href="">Link</a>
         </nav>
@@ -117,7 +117,7 @@
 
             Sencillamente copiamos y pegamos lo mismo varias veces, pero a nivel de código y programación en general,
             esto es muy poco eficiente, imagínate si necesitamos que el mensaje se muestre mil veces o más. Para eso
-            sirven las estructuras de repetición y en este caso se utilizan así:<br><br>
+            sirven las estructuras de repetición y en este caso se utilizan así:
 
            <pre class="sh_cpp">
 0-Inicio
@@ -136,14 +136,18 @@
             <b>Existen 3 tipos de estructuras de repetición:</b><br><br>
 
             Las estructuras serán escritas en código javascript (un lenguaje de programación derivado de C y C++
-            utilizado en la mayoría de paginas web)<br><br>
+            utilizado en la mayoría de paginas web)
 
             Repita Para (for): Fue la estructura utilizada en el ejemplo anterior.
-            var i;
-            for (i=1;i<=10;i++)
-            {
-            //Bloque de instrucciones
-            }
+            <pre class="sh_cpp">
+#include <iostream>
+using namespace std;
+int main() {
+   for (int i=1;i<=10;i++){
+       //Bloque de instrucciones;
+   }
+}
+                </pre>
             Primero se declara una variable de control que usualmente se le llama "i", luego dentro de los parámetros
             del bucle se le asigna un número, se establece la condición y se incrementa o decrementa la variable en
             tantas unidades como sea necesario, después dentro de los corchetes escribimos las instrucciones.
@@ -151,90 +155,103 @@
             instrucciones de repetirá cuando el valor de "i" sea menor o igual a 10 e "i" irá incrementando una unidad
             en cada repetición, de manera que cuando la variable "i" valga 11 ya no se ejecutará y nuestro programa
             finalizará.
-            Código para demostración:
-            var i;
-            for (i=1;i<=10;i++)
-            {
-            alert("Hola, buenos días\nLa variable i vale "+i)
-            }
+       <pre class="sh_cpp">
+#include <iostream>
+using namespace std;
+int main() {
+  for (int i=1;i<=10;i++){
+      cout<<"Hola buenos dias"<< i+0 << endl;
+  }
+}
+                </pre>
             La estructura Repita para, es las más utilizada para realizar bucles cuya cantidad de repeticiones conocemos
             de antemano como programadores, a diferencia de las estructuras Repita Mientras y Repita Hasta, que son de
-            gran ayuda para cuando no sabemos cuantas repeticiones hará el bucle.
+            gran ayuda para cuando no sabemos cuantas repeticiones hará el bucle.<br><br>
 
-            Repita Mientras (while): Esta estructura tan solo tiene un parámetro, la "condición" que se evalúa al inicio
-            de cada repetición al igual que el Repita para.
-            while (condición)
-            {
-            //Bloque de instrucciones
-            }
-            Por ejemplo un programa que pida un número repetidas veces y tan solo sí ese número es 0 el bucle finaliza,
-            luciría entonces así:
+            <b>Repita Mientras (while):</b> Esta estructura tan solo tiene un parámetro, la "condición" que se evalúa al inicio
+            de cada repetición al igual que el Repita para.<br>
+            <pre class="sh_cpp">
+while (condición)
+{
+  //Bloque de instrucciones
+}
 
-            var n;
-            n = prompt("Introduzca un número:","");
-            while (n!=0)
-            {
-            n = prompt("Introduzca un número:","");
-            }
+Por ejemplo un programa que pida un número repetidas veces y
+tan solo sí ese número es 0 el bucle finaliza, luciría entonces así:
 
+int n=0;
+cout<<"Introduzca un número: "<< endl;
+cin>>n;
+while (n!=0)
+{
+   cout<<"Introduzca un número: "<< endl;
+   cin>>n;
+}
+</pre>
             Primero se declara la variable que guardará el número por ejemplo "n" y luego se pide que se introduzca
             dicho número , la condición establece qué el bucle se ejecutará mientras que el valor de "n" sea distinto de
             0, la instrucción adentro pide un número y este se guardará en "n" entonces la condición vuelve a ser
-            evaluada y así seguirá hasta que se introduzca 0.
+            evaluada y así seguirá hasta que se introduzca 0.<br><br>
 
-            Repita Hasta (do... while): Esta estructura es muy parecida a la anterior, ya que solo tiene un parámetro
+            <b>Repita Hasta (do... while):</b> Esta estructura es muy parecida a la anterior, ya que solo tiene un parámetro
             (la condición), la diferencia está en que dicha condición se evalúa al final del bucle, lo cual permite que
-            aunque la condición no se cumpla, el bloque de instrucciones se ejecutará al menos una vez.
-            do
-            {
-            //Bloque de instrucciones
-            }
-            while (condición)
+            aunque la condición no se cumpla, el bloque de instrucciones se ejecutará al menos una vez.<br>
+           <pre class="sh_cpp">
+do
+{
+  //Bloque de instrucciones
+}
+while (condición)
 
-            Esta estructura es útil en ciertos casos para no tener que repetir lineas de código, comparemos éste ejemplo
-            con el anterior:
-            var n;
-            do
-            {
-            n = prompt("Introduzca un número:","");
-            }
-            while (n!=0)
+Esta estructura es útil en ciertos casos para no tener que repetir
+lineas de código, comparemos éste ejemplo con el anterior:
+int n;
+do
+{
+  cout<<"Introduzca un número: "<< endl;
+  cin>>n;
+}
+while (n!=0)
+            </pre>
             Como podemos apreciar en el ejemplo anterior (Repita Mientras), primero se pide un número para poder evaluar
             la condición y así entrar o no en el bucle y luego se volvía a pedir el número dentro del bucle, pero con la
             estructura (Repita Hasta) no es necesario ya que entramos directamente al bucle sin importar el valor de
-            "n", se pide el número y al final se evalúa la condición.
+            "n", se pide el número y al final se evalúa la condición.<br><br>
+
             En resumen podemos afirmar que la estructura Repita Para (for) es la mejor en la mayoría de casos para
             cuando conocemos cuantas veces se debe repetir el bucle, y las estructuras Repita Mientras (while) y Repita
             Hasta (do... while) para cuando lo desconocemos como programadores, aún así podemos lograr que éstas dos
             ultimas estructuras se comporten como la Primera, de la siguiente forma, por ejemplo:
+<pre class="sh_cpp">
+Repita Para (for):
+int i; //Declaración
+for (i=1;i<=10;i++) //Asignación, Condición, Incremento
+{
+  //Bloque de instrucciones
+}
 
-            Repita Para (for):
-            var i; //Declaración
-            for (i=1;i<=10;i++) //Asignación, Condición, Incremento
-            {
-            //Bloque de instrucciones
-            }
-            Repita Mientras (while):
-            var i=1; //Declaración y Asignación
+Repita Mientras (while):
+int i=1; //Declaración y Asignación
+while (i<=10) //Condición
+{
+  //Bloque de instrucciones
+  i++; //Incremento
+}
 
-            while (i<=10) //Condición
-            {
-            //Bloque de instrucciones
-            i++; //Incremento
-            }
-            Repita Hasta (do... while):
-            var i=0; //Declaración y Asignación
-            do
-            {
-            i++; //Incremento
-            //Bloque de instrucciones
-            }
-            while(i<=10) //Condición
-            Eso es todo por éste tema en general, cualquier duda o pregunta pueden dejarla en los comentarios, recuerden
-            apoyar la continuación de este blog haciendo clic en los banners de publicidad, Saludos!
+Repita Hasta (do... while):
+int i=0; //Declaración y Asignación
+do
+{
+i++; //Incremento
+//Bloque de instrucciones
+}
+while(i<=10) //Condición
+           </pre>
+            Eso es todo por éste tema en general, cualquier duda o pregunta pueden dejarla en los comentarios, <b>recuerden
+            apoyar la continuación de los temas haciendo clic en los banners de publicidad, Saludos!</b><br><br>
 
-            Autor: Cristian Rivas.
-            Derechos Reservados.
+            <b>Autor: lear-prog.
+            Derechos Reservados.</b>
 
         </div>
     </div>

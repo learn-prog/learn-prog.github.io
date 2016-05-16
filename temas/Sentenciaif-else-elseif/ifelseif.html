@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Un Blog con el objetivo de enseñar temas relacionados a la programación">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="theme-color" content="#2196F3">
+    <title>Aprede Programación</title>
+    <link rel="shortcut icon" href="../../images/favicon.png">
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <!-- Style and Scripts-->
+
+    <link rel="stylesheet" href="../../css/material.blue-red.min.css"/>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+
+
+    <!-- Style and Scripts-->
+
+    <script type="text/javascript" src="../../shjs-0.6/sh_main.js"></script>
+    <script type="text/javascript" src="../../shjs-0.6/lang/sh_cpp.js"></script>
+
+
+</head>
+<body class="mdl-color--grey-200 mdl-typography--body-1-force-preferred-font" onload="sh_highlightDocument();">
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Aprende Programación</span>
+            <!-- Add spacer, to align navigation to the right -->
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation for Large Screen-->
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+                <a class="mdl-navigation__link" href="">Link</a>
+            </nav>
+            <!-- Navigation Menu for Small Screen -->
+            <button id="navigation-menu-button"
+                    class="mdl-button mdl-js-button mdl-button--icon mdl-layout--small-screen-only">
+                <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                for="navigation-menu-button">
+                <li class="mdl-menu__item"><a class="navigation-menu-link" href="">Link</a></li>
+                <li class="mdl-menu__item"><a class="navigation-menu-link" href="">Link</a></li>
+                <li class="mdl-menu__item"><a class="navigation-menu-link" href="">Link</a></li>
+                <li class="mdl-menu__item"><a class="navigation-menu-link" href="">Link</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title"><b>Menú</b></span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="../../index.html"><b>Incio</b></a>
+            <a class="mdl-navigation__link" href="../Variableyalgoritmo/v-a.html"><b>Variable y algoritmo</b></a>
+            <a class="mdl-navigation__link" href="../Sentenciaif-else-elseif/ifelseif.html"><b>Sentencia if else y
+                elseif</b></a>
+            <a class="mdl-navigation__link" href="../Estructurasderepeticion/repitas.html"><b>Estructuras de
+                Repetecion</b></a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="page-content">
+
+            <link type="text/css" rel="stylesheet" href="../../shjs-0.6/css/sh_golden.css">
+            <!-- Main Content-->
+            <!--Principal Grid-->
+            <div class="mdl-grid">
+                <!--Spacer-->
+                <div class="mdl-cell mdl-cell--12-col mdl-cell--hide-phone"></div>
+                <!--Spacer-->
+
+                <!--Margin-->
+                <div class="mdl-cell mdl-cell--1-col-tablet mdl-cell--2-col-desktop mdl-cell--hide-phone"></div>
+                <!--Margin-->
+
+                <!--Card-->
+
+                <div
+                        class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col-tablet mdl-cell--8-col-desktop mdl-cell--4-col-phone">
+
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text"><b>Sentencia if-else-elseif</b></h2>
+                    </div>
+
+                    <div class="mdl-card__supporting-text">
+                        <b> Sentencia if</b><br><br>
+
+                        Esta sentencia de control <b>if</b> que se puede escribir en algoritmo como <b>si</b>, permite
+                        ejecutar o no
+                        una sentencia simple o compuesta según se cumpla o no una determinada condición, esta tiene una
+                        condición <b>else</b> que se puede escribir en algoritmo como <b>de lo contrario</b>, la cual no
+                        es
+                        obligatoria y sirve para indicar instrucciones a realizar en caso de no cumplirse la condición.
+
+                        <pre class="sh_cpp">
+Ejemplo:
+if (condición) {
+   //Bloque de instrucciones }
+else {
+   //Bloque de instrucciones
+}
+                            </pre>
+                        <div class="mdl-card__title">
+                            <h2 class="mdl-card__title-text"><b>Sentencia elseif-de lo contrario si</b></h2>
+                        </div>
+                        La sentencia elseif que se menciona en algoritmo como de lo contrario si, se ejecuta cuando
+                        quiere evaluar distintas condiciones una detrás de otra, la condición del if(si) no es verdadera
+                        entonces en ese caso ejecutamos un de lo contrario si(elseif) en el cual se ejecutara una
+                        condición y si no se evalúa verdadera se puede continuar hasta que tu finalices la
+                        sentencia.<br><br>
+
+                        De este modo, la evaluación que se produce es: si se cumple la primera condición, se ejecutan
+                        ciertas instrucciones; si no se cumple, comprobamos la segunda, tercera, cuarta… condición. Si
+                        no se cumple ninguna de las condiciones, se ejecuta el else final en caso de existir.<br><br>
+
+                        <pre class="sh_cpp">
+                            Ejemplo:
+if (condición) {
+   //Bloque de instrucciones; }
+elseif (condicion) {
+   //Bloque de instrucciones;
+}
+else{
+   //Bloque de instrucciones;
+}
+                        </pre>
+
+                    </div>
+                </div>
+
+                <!--Card-->
+
+                <!--Margin-->
+                <div class="mdl-cell mdl-cell--1-col-tablet mdl-cell--2-col-desktop mdl-cell--hide-phone"></div>
+                <!--Margin-->
+                <!--Spacer-->
+                <div class="mdl-cell mdl-cell--12-col mdl-cell--hide-phone"></div>
+                <!--Spacer-->
+            </div>
+            <!--Principal Grid-->
+    </main>
+</div>
+
+
+</body>
+</html>
