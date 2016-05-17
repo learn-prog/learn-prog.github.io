@@ -7,7 +7,7 @@
 }
 
 .custom-layout-backgroud {
-  background-image: url('../images/b.jpg');
+  background-image: url('https://learn-prog.github.io/images/b.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
@@ -53,8 +53,22 @@ padding: 16px;
   width: initial !important;
 }
 
+.main-card-min-height{
+  min-height: 175px !important;
+}
+
 .to-the-rigth{
   float: right;
+}
+
+.space-for-footer{
+  min-height: 15cm;
+}
+
+.navigation-links-buttons{
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
 }
 
 /*---Color Classes----

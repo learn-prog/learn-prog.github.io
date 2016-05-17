@@ -23,6 +23,18 @@
     <script type="text/javascript" src="shjs-0.6/lang/sh_cpp.js"></script>
     <!-- Style and Scripts-->
 
+    <!--Google Analytics Script-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-77878803-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <!--Google Analytics Script-->
+
   </head>
   <body class="mdl-color--grey-200 mdl-typography--body-1-force-preferred-font" onload="sh_highlightDocument();">
   
@@ -35,10 +47,12 @@
           <div class="mdl-layout-spacer"></div>
           <!-- Navigation for Large Screen-->
           <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="https://github.com/learn-prog/" target="_blank"><i class="material-icons">link</i><span>&nbsp;&nbsp;&nbsp;GitHub</span></a>
+            <!--
             <a class="mdl-navigation__link" href="">Link</a>
             <a class="mdl-navigation__link" href="">Link</a>
             <a class="mdl-navigation__link" href="">Link</a>
-            <a class="mdl-navigation__link" href="">Link</a>
+            -->
           </nav>
           <!-- Navigation Menu for Small Screen -->
           <button id="navigation-menu-button" class="mdl-button mdl-js-button mdl-button--icon mdl-layout--small-screen-only">
@@ -46,10 +60,12 @@
           </button>
           <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
               for="navigation-menu-button">
+            <li class="mdl-menu__item"><a class="navigation-menu-link" href="https://github.com/learn-prog/" target="_blank">GitHub</a></li>
+            <!--
             <li class="mdl-menu__item"><a class="navigation-menu-link" href="">Link</a></li>
             <li class="mdl-menu__item"><a class="navigation-menu-link" href="">Link</a></li>
             <li class="mdl-menu__item"><a class="navigation-menu-link" href="">Link</a></li>
-            <li class="mdl-menu__item"><a class="navigation-menu-link" href="">Link</a></li>
+            -->
           </ul>
         </div>
       </header>
@@ -58,7 +74,7 @@
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="index.html">Inicio</a>
           <a class="mdl-navigation__link" href="temas/Variableyalgoritmo/v-a.html">Variables y Algoritmos</a>
-          <a class="mdl-navigation__link" href="">Sentencia If Else y Else If</a>
+          <a class="mdl-navigation__link" href="temas/Sentenciaif-else-elseif/ifelseif.html">Sentencia If Else y Else If</a>
           <a class="mdl-navigation__link" href="temas/Estructurasderepeticion/repitas.html">Estructuras de Repeteción</a>
         </nav>
       </div>
@@ -78,14 +94,14 @@
 
         <!--Cards-->
 
-        <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--8-col-tablet mdl-cell--8-col-desktop mdl-cell--4-col-phone">
+        <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--8-col-tablet mdl-cell--8-col-desktop mdl-cell--4-col-phone main-card-min-height">
 
           <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text">Acerca de este blog...<!--Titulo--></h2>
+            <h2 class="mdl-card__title-text">Bienvenido!<!--Titulo--></h2>
           </div>
           
-          <div class="mdl-card__supporting-text">
-            Este es un espacio con el objetivo de enseñar temas relacionados al mundo de la programación, de una forma clara y sencilla.  
+          <div class="mdl-card__supporting-text mdl-typography--text-justify card-supporting-text-full-width">
+            Bienvenido a nuestra pagina, aquí te ofreceremos temas básicos de programación e iremos aumentando el nivel a través del tiempo, aquí te enseñaremos de una manera sencilla e interactiva las nociones básicas de la programación, te ofreceremos nuevos temas cada semana cada vez mas interesantes para fortalecer tus conocimientos!
           </div>
         </div>
 
@@ -114,7 +130,7 @@
           </div>
 
           <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text main-title-cards">
+            <h2 class="mdl-card__title-text main-title-cards mdl-typography--text-center">
             <a class="main-card-links" href="temas/Variableyalgoritmo/v-a.html">Variables y Algoritmos</a>
             </h2>
           </div>
@@ -132,8 +148,8 @@
           </div>
 
           <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text main-title-cards">
-            <a class="main-card-links" href="">Sentencias</a>
+            <h2 class="mdl-card__title-text main-title-cards mdl-typography--text-center">
+            <a class="main-card-links" href="temas/Sentenciaif-else-elseif/ifelseif.html">Sentencias If-Else</a>
             </h2>
           </div>
           
@@ -150,7 +166,8 @@
           </div>
 
           <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text main-title-cards"><a class="main-card-links" href="temas/Estructurasderepeticion/repitas.html">Estructuras de Repetición</a></h2>
+            <h2 class="mdl-card__title-text main-title-cards mdl-typography--text-center">
+            <a class="main-card-links" href="temas/Estructurasderepeticion/repitas.html">Estructuras de Repetición</a></h2>
           </div>
           
           <!--<div class="mdl-card__supporting-text">-->
@@ -165,7 +182,7 @@
           </div>
 
           <div class="mdl-card__title">
-            <h2 class="mdl-card__title-text main-title-cards">
+            <h2 class="mdl-card__title-text main-title-cards mdl-typography--text-center">
             <a class="main-card-links" href="">Ejemplos</a>
             </h2>
           </div>
@@ -180,10 +197,43 @@
           <div class="mdl-cell mdl-cell--hide-tablet mdl-cell--2-col-desktop mdl-cell--hide-phone"></div>
         <!--Margin-->
         <!--Spacer-->
-          <div class="mdl-cell mdl-cell--12-col mdl-cell--hide-phone"></div>
+          <div class="mdl-cell mdl-cell--12-col mdl-cell--hide-phone space-for-footer"></div>
+        <!--Spacer-->
+        <!--Spacer-->
+          <div class="mdl-cell mdl-cell--12-col mdl-cell--hide-phone space-for-footer"></div>
         <!--Spacer-->
         </div>
         <!--Principal Grid-->
+
+        
+
+        </div>
+        <!--Main Content-->
+
+        <!--<div class="mdl-layout-spacer"></div>-->
+
+        <!--Footer-->
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer__left-section">
+            <div class="mdl-logo">
+              Aclararemos tus dudas y aceptaremos tus sugerencias comunicándote con nosotros a nuestro correo <a href="mailto:learnprog0@gmail.com">learnprog0@gmail.com</a>.
+            </div>
+
+            <!--<ul class="mdl-mini-footer__link-list">
+              <li><a href="">Link 1</a></li>
+              <li><a href="">Link 2</a></li>
+              <li><a href="">Link 3</a></li>
+            </ul>-->
+
+          </div>
+          <div class="mdl-mini-footer__right-section">
+          © Aprende Programación - Todos los derechos reservados
+            <!--<button class="mdl-mini-footer__social-btn"></button>
+            <button class="mdl-mini-footer__social-btn"></button>
+            <button class="mdl-mini-footer__social-btn"></button>-->
+          </div>
+        </footer>
+        <!--Footer-->
       </main>
     </div>
 
