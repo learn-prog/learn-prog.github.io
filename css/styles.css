@@ -6,6 +6,71 @@
     font-weight: 400;
 }
 
+.custom-layout-backgroud {
+  background-image: url('https://learn-prog.github.io/images/b.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.main-title-cards{
+font-size: 18px !important;
+}
+
+.main-cards-icon-border{
+border-bottom: 1px solid rgba(0, 0, 0, .1);
+/*font-size: 1rem;*/
+/*line-height: 18px;*/
+overflow: hidden;
+padding: 16px;
+}
+
+.main-card-icon-size {
+  font-size: 80px;
+}
+
+.mdl-layout__drawer-button:focus {
+    outline-style: none;
+}
+
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.main-card-links {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+}
+
+.main-card-links:hover {
+  color: rgb(255,82,82);
+}
+
+.card-supporting-text-full-width {
+  width: initial !important;
+}
+
+.main-card-min-height{
+  min-height: 175px !important;
+}
+
+.to-the-rigth{
+  float: right;
+}
+
+.space-for-footer{
+  min-height: 15cm;
+}
+
+.navigation-links-buttons{
+  display: flex;
+  box-sizing:border-box;
+  align-items: center;
+}
+
 /*---Color Classes----
 
 .mdl-color--indigo {}
