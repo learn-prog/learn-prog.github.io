@@ -21,10 +21,26 @@
     <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-blue.min.css"/>
     <link rel="stylesheet" href="../../css/styles.css"/>
-
-
     <!-- Style and Scripts-->
 
+    <!--Google Analytics Script-->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-77878803-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!--Google Analytics Script-->
     <script type="text/javascript" src="../../shjs-0.6/sh_main.js"></script>
     <script type="text/javascript" src="../../shjs-0.6/lang/sh_cpp.js"></script>
 
@@ -44,25 +60,26 @@
             <!-- Navigation for Large Screen-->
             <a href="../../index.html"> <img src="../../images/favicon.png"></a>
             <nav class="mdl-navigation mdl-layout--large-screen-only">
-                <a class="mdl-navigation__link" href="https://github.com/learn-prog/" target="_blank"><i
-                       class="material-icons">link</i><span>&nbsp;&nbsp;&nbsp;GitHub</span></a>
+                <!--    <a class="mdl-navigation__link" href="https://github.com/learn-prog/" target="_blank"><i
+                         class="material-icons">link</i><span>&nbsp;&nbsp;&nbsp;GitHub</span></a>
 
-              <!--<a class="mdl-navigation__link" href="">Link</a>
-               <a class="mdl-navigation__link" href="">Link</a>
-               <a class="mdl-navigation__link" href="">Link</a>
-               -->
+              <a class="mdl-navigation__link" href="">Link</a>
+                 <a class="mdl-navigation__link" href="">Link</a>
+                 <a class="mdl-navigation__link" href="">Link</a>
+                 -->
             </nav>
             <!-- Navigation Menu for Small Screen -->
-            <button id="navigation-menu-button"
+            <!-- <button id="navigation-menu-button"
                     class="mdl-button mdl-js-button mdl-button--icon mdl-layout--small-screen-only">
                 <i class="material-icons">more_vert</i>
             </button>
             <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
                 for="navigation-menu-button">
+              <!--
                 <li class="mdl-menu__item"><a class="navigation-menu-link" href="">Link</a></li>
                 <li class="mdl-menu__item"><a class="navigation-menu-link" href="">Link</a></li>
                 <li class="mdl-menu__item"><a class="navigation-menu-link" href="">Link</a></li>
-                <li class="mdl-menu__item"><a class="navigation-menu-link" href="">Link</a></li>
+                <li class="mdl-menu__item"><a class="navigation-menu-link" href="">Link</a></li>-->
             </ul>
         </div>
     </header>
@@ -219,7 +236,10 @@ Ejemplo de algoritmo:
                             Siguiente Tema
                         </a>
                     </div>
+
                 </div>
+
+
 
                 <!--Card-->
             </div>
