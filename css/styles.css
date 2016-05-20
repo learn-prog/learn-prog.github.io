@@ -1,9 +1,9 @@
 .navigation-menu-link
 {
 	text-decoration: none;
-    color: rgba(0,0,0,.87);
-    display: block;
-    font-weight: 400;
+  color: rgba(0,0,0,.87);
+  display: block;
+  font-weight: 400;
 }
 
 .custom-layout-backgroud {
@@ -14,15 +14,15 @@
 }
 
 .main-title-cards{
-font-size: 18px !important;
+  font-size: 18px !important;
 }
 
 .main-cards-icon-border{
-border-bottom: 1px solid rgba(0, 0, 0, .1);
-/*font-size: 1rem;*/
-/*line-height: 18px;*/
-overflow: hidden;
-padding: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+  /*font-size: 1rem;*/
+  /*line-height: 18px;*/
+  overflow: hidden;
+  padding: 16px;
 }
 
 .main-card-icon-size {
@@ -46,7 +46,7 @@ padding: 16px;
 }
 
 .main-card-links:hover {
-  color: rgb(255,82,82);
+  color: rgb(255,82,82); /*cambiar por azul xD*/
 }
 
 .card-supporting-text-full-width {
@@ -69,6 +69,10 @@ padding: 16px;
   display: flex;
   box-sizing:border-box;
   align-items: center;
+}
+
+.disqus-card{
+  padding: 16px;
 }
 
 /*---Color Classes----
