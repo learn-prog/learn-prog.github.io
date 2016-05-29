@@ -1,0 +1,336 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Un Blog con el objetivo de enseñar temas relacionados a la programación">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="theme-color" content="#2196F3">
+    <title>Aprede Programación</title>
+    <link rel="shortcut icon" href="../../images/favicon.png">
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <!-- Style and Scripts-->
+
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-red.min.css"/>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.indigo-blue.min.css"/>
+    <link rel="stylesheet" href="../../css/styles.css"/>
+    <!-- Style and Scripts-->
+
+    <!--Google Analytics Script-->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-77878803-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!--Google Analytics Script-->
+    <script type="text/javascript" src="../../shjs-0.6/sh_main.js"></script>
+    <script type="text/javascript" src="../../shjs-0.6/lang/sh_cpp.js"></script>
+
+
+</head>
+<body class="mdl-color--grey-200 mdl-typography--body-1-force-preferred-font custom-layout-backgroud"
+      onload="sh_highlightDocument();">
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <!-- Title -->
+            <span class="mdl-layout-title">Aprende Programación</span>
+            <!-- Add spacer, to align navigation to the right -->
+
+            <div class="mdl-layout-spacer"></div>
+            <!-- Navigation for Large Screen-->
+            <a href="../../index.html"> <img src="../../images/favicon.png"></a>
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <!--    <a class="mdl-navigation__link" href="https://github.com/learn-prog/" target="_blank"><i
+                         class="material-icons">link</i><span>&nbsp;&nbsp;&nbsp;GitHub</span></a>
+
+              <a class="mdl-navigation__link" href="">Link</a>
+                 <a class="mdl-navigation__link" href="">Link</a>
+                 <a class="mdl-navigation__link" href="">Link</a>
+                 -->
+            </nav>
+            <!-- Navigation Menu for Small Screen -->
+            <!-- <button id="navigation-menu-button"
+                    class="mdl-button mdl-js-button mdl-button--icon mdl-layout--small-screen-only">
+                <i class="material-icons">more_vert</i>
+            </button>
+            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+                for="navigation-menu-button">
+              <!--
+                <li class="mdl-menu__item"><a class="navigation-menu-link" href="">Link</a></li>
+                <li class="mdl-menu__item"><a class="navigation-menu-link" href="">Link</a></li>
+                <li class="mdl-menu__item"><a class="navigation-menu-link" href="">Link</a></li>
+                <li class="mdl-menu__item"><a class="navigation-menu-link" href="">Link</a></li>-->
+            </ul>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title"><b>Menú</b></span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="../../index.html">Inicio</a>
+            <a class="mdl-navigation__link" href="../Variableyalgoritmo/v-a.html">Variables y Algoritmos</a>
+            <a class="mdl-navigation__link" href="../Sentenciaif-else-elseif/ifelseif.html">Sentencia If Else y Else
+                If</a>
+            <a class="mdl-navigation__link" href="../Estructurasderepeticion/repitas.html">Estructuras de
+                Repeteción</a>
+            <a class="mdl-navigation__link" href="../Operadores/operadoresarl.html">Operadores de asignación,
+                racionales y logicos</a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="page-content">
+
+            <link type="text/css" rel="stylesheet" href="../../shjs-0.6/css/sh_golden.css">
+            <!-- Main Content-->
+
+            <!--Principal Grid-->
+            <div class="mdl-grid">
+
+                <!--Spacer-->
+                <div class="mdl-cell mdl-cell--12-col mdl-cell--hide-phone"></div>
+                <!--Spacer-->
+
+                <!--Margin-->
+                <div class="mdl-cell mdl-cell--1-col-tablet mdl-cell--2-col-desktop mdl-cell--hide-phone"></div>
+                <!--Margin-->
+
+                <!--Card-->
+
+                <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col-tablet mdl-cell--8-col-desktop mdl-cell--4-col-phone"
+                     style="text-align: justify;">
+
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text"><b>Operadores de asignación, racionales y lógicos</b></h2>
+                    </div>
+
+                    <div class="mdl-card__supporting-text">
+                        <h5>Opradores de asignación</h5>
+                        En la mayoría de los lenguajes de programación el signo <b>.=.</b> no significa <b>.igual a.</b>.
+                        Es un
+                        operador de asignación de valores, y no hay que confundirlo con el operador relacional de
+                        igualdad <b>(==)</b>. Veamos algunos ejemplos de asignación:<br><br>
+                        a = 6;<br>
+                        resultado = a - 1;<br>
+                        resultado = resultado * 2;<br><br>
+                        La primera sentencia asigna el valor numérico 6 a una variable llamada a.<br><br>
+                        La segunda sentencia hace que en una variable llamada resultado se almacene el valor numérico
+                        que tiene la variable a menos el valor numérico 1, es decir, en este caso la variable resultado
+                        almacenaría el valor 5.<br><br>
+                        La tercera sentencia multiplica entre 2 el valor que tenía la variable resultado, es decir,
+                        después
+                        de ejecutarse en este caso, resultado pasaría a valer 10. <br><br>
+                        Hay que notar que desde el punto de
+                        vista matemático la expresión no tiene sentido. Ya se ha dicho que no es un operador de
+                        igualdad, sino de sustitución. Por eso, la sentencia
+                        <b>a + b = 5;</b> no es válida.<br><br>
+                        A la izquierda del operador <b>.=.</b> no puede haber nunca una expresión.
+                        Tiene que haber necesariamente una variable. De esta forma tampoco es válida la expresión
+                        <b>a + b = 5 + c = d-f;</b>
+
+                        <h5>Operadores relacionales</h5>
+                        Este es un apartado especialmente importante para todas aquellas personas sin experiencia en
+                        programación. Una característica imprescindible de cualquier lenguaje de programación es la de
+                        considerar alternativas, esto es, la de proceder de un modo u otro según se cumplan o no ciertas
+                        condiciones. Los operadores relacionales permiten estudiar si se cumplen o no esas condiciones.
+                        Así pues, estos operadores producen un resultado u otro según se cumplan o no algunas
+                        condiciones que se verán a continuación.<br><br>
+                        En el lenguaje natural, existen varias palabras o formas de indicar si se cumple o no una
+                        determinada condición: <b>sí o no, verdadero o falso (true o false en inglés)</b>, etc.
+                        En la mayoría de lenguajes de programación se ha hecho bastante general el utilizar la última de
+                        las formas citadas: <b>(true, false)</b>. Si una condición se cumple, el resultado es <b>true
+                        (verdadero)
+                        (se considera un .sí.)</b>; en caso contrario, el resultado es <b>false(falso) (se considera un
+                        .no.)</b>.<br><br>
+                        Los operadores
+                        relacionales son los siguientes:
+
+                      <pre class="sh_cpp">
+ <table border="1">
+     <thead>
+     <tr align="center">
+         <th scope="row">Signo</th>
+         <th data-field="name">Significado</th>
+         <th data-field="price">Ejemplo</th>
+     </tr>
+     </thead>
+
+     <tbody>
+     <tr align="center">
+         <td>==</td>
+         <td>Igual que</td>
+         <td>A == A</td>
+     </tr>
+     <tr align="center">
+         <td><</td>
+         <td>Menor que</td>
+         <td>1 < 3</td>
+     </tr>
+     <tr align="center">
+         <td>></td>
+         <td>Mayor que</td>
+         <td>7 > 5</td>
+     </tr>
+     <tr align="center">
+         <td><=</td>
+         <td>Menor o igual que</td>
+         <td>1 <= 3</td>
+     </tr>
+     <tr align="center">
+         <td>>=</td>
+         <td>Mayor o igual que</td>
+         <td>7 >= 5</td>
+     </tr>
+     <tr align="center">
+         <td>!=</td>
+         <td>Diferente que</td>
+         <td>A != 1</td>
+     </tr>
+     </tbody>
+ </table>
+                          </pre>
+
+                        <b>Ejemplos</b><br><br>
+                        El resultado de la operación será <b>false(falso)</b> si la condición representada por el
+                        operador relacional no se cumple, y será un <b>true(verdadera)</b> si la condición representada
+                        por el
+                        operador relacional se cumple.<br><br>
+
+                        (5==2) el resultado es <b>false</b> porque la condición no se cumple.<br>
+                        (3<=3) el resultado es <b>true</b> porque la condición se cumple.<br>
+                        (3<3) el resultado es <b>false</b> porque la condición no se cumple.<br>
+                        (1!=1) el resultado es <b>false</b> porque la condición no se cumple.<br>
+                        <br><br>
+
+                        <h5>Operadores lógicos</h5>
+
+                        Los operadores lógicos permiten unir expresiones lógicas, las cuales son todas aquellas que
+                        obtienen como resultado verdadero o falso. Los operadores lógicos en C++ son los
+                        siguientes <b>&& (operador Y) || (operador OR)</b>.<br><br>
+
+                        Vamos a ver ejemplos para comprender el funcionamiento, el operador <b>&&(Y)</b> podríamos
+                        usarlo en
+                        esta expresión lógica: <b>(3<5) &&  (30>20)</b> esta expresión devuelve verdadero, ya que las
+                        dos
+                        expresiones son verdaderas (3<5) es verdadero y (30>20) también es verdadero. El operador <b>&&(Y)</b>
+                        devuelve verdadero si todas las expresiones son verdaderas, con que una sea falsa el operador
+                        devolverá falso.<br><br>
+
+                        Vamos a ver el operador <b>||(OR)</b> por ejemplo en esta expresión:  <b>(3<5)||(10>20)</b> esta
+                        expresión
+                        devuelve verdadero, porque con el operador <b>|| (OR)</b> si una de todas las expresiones es
+                        verdadera
+                        el resultado es verdadero y como (3<5) es verdadero pues ya se cumple. <b>Para que sea falso
+                        ninguna debe de ser verdadera</b>.<br><br>
+
+                        En este punto espero que hayas entendido estos operadores y los anteriores vistos, la
+                        comprensión de estos es muy importante, aunque entiendo, que no veas todavía el efecto que
+                        tienen dentro de la programación. Esto es una pieza fundamental del rompecabezas que hay que
+                        construir
+                        para  programar.<br><br>
+
+                    </div>
+
+
+                    <div class="mdl-card__actions mdl-card--border navigation-links-buttons">
+
+                        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent to-the-rigth"
+                           href="../Estructurasderepeticion/repitas.html" title="TITULO DEL TEMA">
+                            Tema Anterior
+                        </a>
+
+                        <div class="mdl-layout-spacer"></div>
+
+                        <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent to-the-rigth"
+                           href="#" title="TITULO DEL TEMA">
+                            En construcción
+                        </a>
+                    </div>
+                </div>
+
+                <!--Card-->
+
+                <!--Margin-->
+                <div class="mdl-cell mdl-cell--1-col-tablet mdl-cell--2-col-desktop mdl-cell--hide-phone"></div>
+                <!--Margin-->
+
+                <!--Margin-->
+                <div class="mdl-cell mdl-cell--1-col-tablet mdl-cell--2-col-desktop mdl-cell--hide-phone"></div>
+                <!--Margin-->
+
+                <!--Cards-->
+
+                <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col-tablet mdl-cell--8-col-desktop mdl-cell--4-col-phone">
+
+                    <div id="disqus_thread" class="disqus-card"></div>
+                    <script>
+                        /**
+                         * RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                         * LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+                         */
+
+                        var disqus_config = function () {
+                            this.page.url = 'http://learn-prog.github.io/temas/Operadores/operadoresarl.html'; // Replace PAGE_URL with your page's canonical URL variable
+                            this.page.identifier = 'temas/Operadores/operadoresarl'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                        };
+
+                        (function () { // DON'T EDIT BELOW THIS LINE
+                            var d = document, s = d.createElement('script');
+
+                            s.src = '//learn-prog.disqus.com/embed.js';
+
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript"
+                                                                      rel="nofollow">comments powered by Disqus.</a>
+                    </noscript>
+
+                    <!--
+                      <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Comentarios</h2>
+                      </div>
+
+                      <div class="mdl-card__supporting-text card-supporting-text-full-width"></div>
+                    -->
+
+                </div>
+
+                <!--Card-->
+
+                <!--Margin-->
+                <div class="mdl-cell mdl-cell--1-col-tablet mdl-cell--2-col-desktop mdl-cell--hide-phone"></div>
+                <!--Margin-->
+
+                <!--Spacer-->
+                <div class="mdl-cell mdl-cell--12-col mdl-cell--hide-phone"></div>
+                <!--Spacer-->
+
+            </div>
+            <!--Principal Grid-->
+        </div>
+    </main>
+</div>
+
+
+</body>
+</html>
