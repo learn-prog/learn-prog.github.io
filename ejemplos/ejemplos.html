@@ -128,49 +128,229 @@
                     <div class="mdl-card__supporting-text card-supporting-text-full-width">
                         <a href="factorial/factorial.html">Calcular el factorial de un número</a>
 
-                        <h5>Aquí les dejo una serie de ejercicios para que practiquen, realicenlos y les dejare los
-                            resultados de cada uno de ellos a las 10pm que me llega la luz: </h5>
-
-                        Ejercicio 1<br><br>
-
-                        Escribir un programa que lea exactamente 8 números y luego escriba la suma de todos ellos.<br><br>
-
-                        Ejercicio 2<br><br>
-
-                        Modificar el programa anterior para que en lugar de leer 8 números, se puedan leer tantos
-                        números como se quiera hasta que llegue un cero. El resultado es la suma de todos los números
-                        leídos.<br><br>
-
-                        Ejercicio 3<br><br>
-
-                        Escribir un programa en que lea tres números e indique el tipo de triángulo que forman
-                        (isósceles, equilátero, escaleno). Comprobar que los números realmente formen un triángulo, sino
-                        emitir el error. Teniendo en cuenta que un triangulo equilátero es aquel que tiene sus 3 lado
-                        iguales, y el triángulo isósceles es aquel que tiene 2 lados iguales y el triángulo escaleno es
-                        el que no tiene lados iguales.<br><br>
-                        Pista: con números negativos no puedes formar un triángulo.
-                        <br><br>
-
-                        Ejercicio 4<br><br>
-
-                        Modificar el programa anterior para que se pueda repetir indefinidamente si el usuario lo desea
-                        (que el ordenador pregunte ¿Quiere continuar? y la persona pueda responder S ó N).
-                        <br><br>
-                        Ejercicio 5<br><br>
-
-                        Escribir un programa que escriba todos los múltiplos de 3 del número 1 al 3000.<br><br>
+                        <h5>Ejercicios y algoritmos ya relaizados, te recomiendo leer el enunciado y realizarlo y al final comparas
+                        el algoritmo, para que te evalues, ya saben cualquier duda nos la pueden indicar y se las ecplicaremos</h5>
 
 
-                        Ejercicio 6<br><br>
 
-                        Programa que lea una serie de números (leer hasta que llegue el cero) y que calcule
-                        su media aritmética. Teniendo en cuenta la media aritmética es el valor obtenido al sumar todos
-                        los datos y dividir el resultado entre el número total de datos.<br><br>
+                        <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                            <div class="mdl-tabs__tab-bar">
+                                <a href="#algoritmo" class="mdl-tabs__tab is-active"> Ejercicio 1</a>
+                                <a href="#codigo" class="mdl-tabs__tab">Algoritmo</a>
+                                <!--<a href="#" class="mdl-tabs__tab" onclick="numero_pos_neg_cero()">Verificar</a>
+                              <a href="#ejemplo" class="mdl-tabs__tab">Ejemplo</a>-->
+                            </div>
 
-                        Ejercicio 7<br><br>
+                            <div class="mdl-tabs__panel is-active" id="algoritmo">
+                                <br>
+                                <p>Escribir un programa que lea exactamente 8 números y luego escriba la suma de todos ellos.</p>
+                            </div>
 
-                        Programa que lea una serie de números por teclado e indique cuál es el mayor.<br><br>
+                            <div class="mdl-tabs__panel" id="codigo">
 
+            <pre class="sh_cpp">
+0- Inicio
+  1- Declarar n,i,suma=0;
+  2- Repita Para (i=1;i<=8;i++){
+    2.1- Leer = n;
+    2.2- suma+=n;
+  5- Fin Repita Para };
+  6- Escribir "La suma de los 8 números es: ",suma;
+7- Fin;
+            </pre>
+                            </div>
+
+                           <!-- <div class="mdl-tabs__panel" id="requerimiento">
+                                <br>
+
+
+                                <!--Codigo Javascript
+
+                                <script>
+
+                                    function numero_pos_neg_cero() {
+                                        var n = prompt("Introduzca cualquier numero", "");
+                                        if (n > 0 && n != null) {
+                                            alert("El numero es positivo");
+                                        } else if (n < 0) {
+                                            alert("El numero es negativo");
+                                        } else if (n == 0) {
+                                            alert("El numero es cero");
+                                        }
+                                    }
+                                </script>
+
+                                <!--Codigo Javascript
+
+
+                            </div>-->
+
+                            <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                                <div class="mdl-tabs__tab-bar">
+                                    <a href="#ejercicio1" class="mdl-tabs__tab is-active"> Ejercicio 2</a>
+                                    <a href="#codigo1" class="mdl-tabs__tab">Algoritmo</a>
+                                    <!--<a href="#" class="mdl-tabs__tab" onclick="numero_pos_neg_cero()">Verificar</a>
+                                  <a href="#ejemplo" class="mdl-tabs__tab">Ejemplo</a>-->
+                                </div>
+
+                                <div class="mdl-tabs__panel is-active" id="ejercicio1">
+                                    <br>
+                                    <p>Modificar el programa anterior para que en lugar de leer 8 números, se puedan leer tantos
+                                        números como se quiera hasta que llegue un cero. El resultado es la suma de todos los números
+                                        leídos.</p>
+                                </div>
+
+                                <div class="mdl-tabs__panel" id="codigo1">
+
+            <pre class="sh_cpp">
+0- Inicio
+  1- Declarar n,suma=0;
+  2- Repita{
+    2.1- Leer = n;
+    2.2- suma+=n;
+  5- }Hasta(n!=0);
+  6- Escribir "La suma de los números indicados es: ",suma;
+7- Fin;
+            </pre>
+                                </div>
+
+
+                                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                                    <div class="mdl-tabs__tab-bar">
+                                        <a href="#ejercicio2" class="mdl-tabs__tab is-active"> Ejercicio 3</a>
+                                        <a href="#codigo2" class="mdl-tabs__tab">Algoritmo</a>
+                                        <!--<a href="#" class="mdl-tabs__tab" onclick="numero_pos_neg_cero()">Verificar</a>
+                                      <a href="#ejemplo" class="mdl-tabs__tab">Ejemplo</a>-->
+                                    </div>
+
+                                    <div class="mdl-tabs__panel is-active" id="ejercicio2">
+                                        <br>
+                                        <p> Escribir un programa en que lea tres números e indique el tipo de triángulo que forman
+                                            (isósceles, equilátero, escaleno). Comprobar que los números realmente formen un triángulo, sino
+                                            emitir el error. Teniendo en cuenta que un triangulo equilátero es aquel que tiene sus 3 lado
+                                            iguales, y el triángulo isósceles es aquel que tiene 2 lados iguales y el triángulo escaleno es
+                                            el que no tiene lados iguales.<br>
+                                            Pista: con números negativos no puedes formar un triángulo.</p>
+                                    </div>
+
+                                    <div class="mdl-tabs__panel" id="codigo2">
+
+            <pre class="sh_cpp">
+0- Inicio
+ 1-Declarar a,b,c;
+ 2-Escribir"Escribe el primer lado: ";
+ 3-Leer= a;
+ 4-Escrbir"Escribe el segundo lado: ";
+ 5-Leer= b;
+ 6-Escrbir"Escribe el tercer lado: ";
+ 7-Leer= c;
+ /*Comprobación si los números son positivos*/
+ 8-Si((a>0) y (b>0) y (c>0)){
+     8.1-Si(a==b) && b==c)
+           8.1.2-Escribir"Triángulo equilátero";
+     8.2-De lo contrario si((a==b) o (a==c) o (b==c)
+           8.2.1-Escribir"Triángulo isósceles";
+     8.3-De lo contrario
+           8.3.1-Escribir"Triángulo escaleno";
+ }
+ 9-De lo contrario{
+     9.1-Escrbir"Los números son negativos y no forman un triángulo";
+}
+10-Fin;
+            </pre>
+                                    </div>
+
+                                    <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                                        <div class="mdl-tabs__tab-bar">
+                                            <a href="#ejercicio4" class="mdl-tabs__tab is-active"> Ejercicio 4</a>
+                                            <a href="#codigo4" class="mdl-tabs__tab">Algoritmo</a>
+                                            <!--<a href="#" class="mdl-tabs__tab" onclick="numero_pos_neg_cero()">Verificar</a>
+                                          <a href="#ejemplo" class="mdl-tabs__tab">Ejemplo</a>-->
+                                        </div>
+
+                                        <div class="mdl-tabs__panel is-active" id="ejercicio4">
+                                            <br>
+                                            <p>Escribir un programa que escriba todos los múltiplos de 3 del número 1 al 50.</p>
+                                        </div>
+
+                                        <div class="mdl-tabs__panel" id="codigo4">
+
+            <pre class="sh_cpp">
+0- Inicio
+  1-Declarar i;
+  2-Escribir "Multiplo de 3 del 1 al 50";
+  3-Repita para(i=1; i<=50; i++){
+    3.1-Si( i % 3 ==0 )
+        3.1.2-Escrbir"i";
+  4-Fin del Repita }
+5- Fin;
+            </pre>
+                                        </div>
+
+                                        <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                                            <div class="mdl-tabs__tab-bar">
+                                                <a href="#ejercicio5" class="mdl-tabs__tab is-active"> Ejercicio 5</a>
+                                                <a href="#codigo5" class="mdl-tabs__tab">Algoritmo</a>
+                                                <!--<a href="#" class="mdl-tabs__tab" onclick="numero_pos_neg_cero()">Verificar</a>
+                                              <a href="#ejemplo" class="mdl-tabs__tab">Ejemplo</a>-->
+                                            </div>
+
+                                            <div class="mdl-tabs__panel is-active" id="ejercicio5">
+                                                <br>
+                                                <p> Programa que lea una serie de números (leer hasta que llegue el cero) y que calcule
+                                                    su media aritmética. Teniendo en cuenta la media aritmética es el valor obtenido al sumar todos
+                                                    los datos y dividir el resultado entre el número total de datos.</p>
+                                            </div>
+
+                                            <div class="mdl-tabs__panel" id="codigo5">
+
+            <pre class="sh_cpp">
+0- Inicio
+  1-Declarar n,suma=0,cont=0;
+  2-Repita{
+    2.1Escribir"Introduzca un número: ";
+        2.2-Leer= n;
+        2.3-suma+=n;
+        2.4-Si (n!=0) cont++;
+    3-}Hasta (i!=0);
+    4-Si(cont!=0){
+      4.1-suma/cont;
+      4.2-Escribir"La media aritmetica es:",suma;
+    5-De lo contrario
+      5.1-"Ingrisaste 0 lo cual indica la salida del programa.";
+      }
+7- Fin;
+            </pre>
+                                            </div>
+
+                                            <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                                                <div class="mdl-tabs__tab-bar">
+                                                    <a href="#ejercicio6" class="mdl-tabs__tab is-active"> Ejercicio 6</a>
+                                                    <a href="#codigo6" class="mdl-tabs__tab">Algoritmo</a>
+                                                    <!--<a href="#" class="mdl-tabs__tab" onclick="numero_pos_neg_cero()">Verificar</a>
+                                                  <a href="#ejemplo" class="mdl-tabs__tab">Ejemplo</a>-->
+                                                </div>
+
+                                                <div class="mdl-tabs__panel is-active" id="ejercicio6">
+                                                    <br>
+                                                    <p>Programa que lea una serie de números por teclado e indique cuál es el mayor.</p>
+                                                </div>
+
+                                                <div class="mdl-tabs__panel" id="codigo6">
+
+            <pre class="sh_cpp">
+0- Inicio
+  1- Decalrar n , mayor=0;
+  2- Repita{
+       2.1-Escribir"Introduzca un número: ";
+       2.2-Leer= n;
+       2.3-Si(mayor < n)
+       2.4-mayor=n;
+  3- }Hasta (n!=0);
+  4- Escrbir"El mayor es: ",mayor;
+5- Fin;
+            </pre>
+                                                </div>
 
                     </div>
 
