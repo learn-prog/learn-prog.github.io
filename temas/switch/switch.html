@@ -96,7 +96,7 @@
                Repeteción</a>
            <a class="mdl-navigation__link" href="../Operadores/operadoresarl.html">Operadores de asignación,
                racionales y logicos</a>
-                <a class="mdl-navigation__link" href="../c++/sintaxis.html">Sintaxis de C++</a>
+               <a class="mdl-navigation__link" href="../c++/sintaxis.html">Sintaxis de C++</a>
                <a class="mdl-navigation__link" href="../switch/switch.html">
                  Switch
                </a>
@@ -126,64 +126,31 @@
                 <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--6-col-tablet mdl-cell--8-col-desktop mdl-cell--4-col-phone" style="text-align: justify;">
 
                     <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text"><b>Sentencia if-else</b></h2>
+                        <h2 class="mdl-card__title-text"><b>Switch</b></h2>
                     </div>
 
                     <div class="mdl-card__supporting-text">
 
-                        Esta sentencia de control <b>if</b> que se puede escribir en algoritmo como <b>si</b>, permite
-                        ejecutar o no
-                        una sentencia simple o compuesta según se cumpla o no una determinada condición, esta tiene una
-                        condición <b>else</b> que se puede escribir en algoritmo como <b>de lo contrario</b>, la cual no
-                        es
-                        obligatoria y sirve para indicar instrucciones a realizar en caso de no cumplirse la condición.
-
+                        Los condicionales Switch, son una estructura de control condicional, que permite definir múltiples casos que puede llegar a cumplir una variable cualquiera, y qué acción tomar en cualquiera de estas situaciones, incluso es posible determinar qué acción llevar a cabo en caso de no cumplir ninguna de las condiciones dadas.
+                        <br><br>
+                        <b>Sintaxis del Switch:</b>
                         <pre class="sh_cpp">
-Ejemplo:
-if (condición) {
-   //Bloque de instrucciones }
-else {
-   //Bloque de instrucciones
+switch(Variable) //variable a utilizar 
+{ 
+case valor1: //Bloque de instrucciones 1; 
+break; La instrucción break se utiliza para cerrar cada case. 
+case valor2: //Bloque de instrucciones 2; 
+break; 
+case valor3: 
+//Bloque de instrucciones 3; 
+break;
+default: //Bloque de instrucciones por defecto; 
+//default 
+//es el bloque que se ejecuta en caso de que no se de ningún caso.
 }
                             </pre>
-                        <div class="mdl-card__title">
-                            <h2 class="mdl-card__title-text"><b>Sentencia elseif-de lo contrario si</b></h2>
-                        </div>
-                        La sentencia elseif que se menciona en algoritmo como de lo contrario si, se ejecuta cuando
-                        quiere evaluar distintas condiciones una detrás de otra, la condición del if(si) no es verdadera
-                        entonces en ese caso ejecutamos un de lo contrario si(elseif) en el cual se ejecutara una
-                        condición y si no se evalúa verdadera se puede continuar hasta que tu finalices la
-                        sentencia.<br><br>
-
-                        De este modo, la evaluación que se produce es: si se cumple la primera condición, se ejecutan
-                        ciertas instrucciones; si no se cumple, comprobamos la segunda, tercera, cuarta… condición. Si
-                        no se cumple ninguna de las condiciones, se ejecuta el else final en caso de existir.<br><br>
-
-                        <pre class="sh_cpp">
-Ejemplo:
-if (condición) {
-   //Bloque de instrucciones; }
-elseif (condicion) {
-   //Bloque de instrucciones;
-}
-else{
-   //Bloque de instrucciones;
-}
-                        </pre>
-                        En resumen podemos afirmar que
-                        las sentencias son un tipo de estructura cuya función es la de ejecutar un bloque de
-                        instrucciones sí una condición que hayamos definido previamente resulta ser verdadera y que en
-                        el caso de que la condición sea evaluada como falsa se ejecutará un bloque de instrucciones
-                        distinto.<br><br>
-
-                        Por otra parte una sentencia puede ser un poco mas elaborada, en donde sí la primera condición
-                        es evaluada como falsa no se ejecuta inmediatamente el otro bloque de instrucciones, sino que se
-                        evalua una nueva condición.<br><br>
-
-                        Aqui te mostraremos un ejemplo del if-else if, donde podras observar el algoritmo, codigo y
-                        prueba del siguien progrma:<br><br>
-                        <b> Realizar un programa que pida un numero y muestre si es positivo, negativo o
-                            cero.</b>
+                       <b>Ejemplo</b><br><br>
+                        Imaginemos entonces que nuestro programa consta de un menú de opciones digamos 4 opciones, cada una representada con un número correspondiente, queremos entonces que de acuerdo a un número ingresado por el usuario ejecutemos una acción correspondiente y en caso de que no corresponda a ninguna de las posibles opciones, mostrar un mensaje de error. De este modo, podemos identificar 4 casos distintos para nuestro switch o en otras palabras, hemos identificado cuatro condiciones posibles que puede llegar a cumplir nuestra variable: el caso 1 sera una suma + de dos números, el caso 2: sera una resta – de dos números, el caso 3 una multiplicación * de dos números y el caso 4 una división / de dos números. adicionalmente en la opción que se ejecutará por defecto “default” en caso de no seleccionar ninguno de estos casos se mostrara un mensaje de error, es decir si el usuario ingresa por ejemplo 7, mostraremos un mensaje de error.<br><br>
 
                         <div class="mdl-card__supporting-text card-supporting-text-full-width">
 
@@ -191,55 +158,52 @@ else{
 
                             <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
                                 <div class="mdl-tabs__tab-bar">
-                                    <a href="#algoritmo" class="mdl-tabs__tab is-active">Algoritmo</a>
                                     <a href="#codigo" class="mdl-tabs__tab">Código</a>
                                     <a href="#" class="mdl-tabs__tab" onclick="numero_pos_neg_cero()">Verificar</a>
                                     <!--<a href="#ejemplo" class="mdl-tabs__tab">Ejemplo</a>-->
                                 </div>
 
-                                <div class="mdl-tabs__panel is-active" id="algoritmo">
+                                <div class="mdl-tabs__panel is-active" id="codigo">
 
             <pre class="sh_cpp">
-0-Inicio
-  2-Declarar n;
-  3-Escrbir "Introduzca cualquier numero: ";
-  4-Leer= n;
-  5-Si(n&gt;0)
-    {
-    5.1-Escribir "El numero es positivo";
-    }
-  6-De lo contrario si(n&lt;0)
-    {
-     6.1-Escrbir "El numero es negativo";
-    }
-  7-De lo contrario si (n==0)
-    {
-     7.1-Escribir "El numero es cero";
-    }
-8-Fin;
-            </pre>
-                                </div>
-
-                                <div class="mdl-tabs__panel" id="codigo">
-
-            <pre class="sh_cpp">
-#include  &lt;iostream&gt;
-  using namespace std;
-  int main(){
-    int n;
-    cout&lt;&lt;"Introduzca cualquier numero: ";
-    cin&gt;&gt;n;
-    if(n&gt;0)
-    {
-      cout&lt;&lt;"El numero es positivo";
-    }else if (n&lt;0)
-    {
-      cout&lt;&lt;"El numero es negativo";
-    }else if (n==0)
-    {
-      cout&lt;&lt;"El numero es cero";
-    }
-  }
+#include &lt;iostream>
+using namespace std;
+int main(){
+int opcion=0, n1=0, n2=0, suma=0, resta=0, multiplicacion=0, 
+division=0;
+cout<<"Introduzca los siguientes números, 
+para luego escoger que operación matemática realizar."&lt;&lt;endl;
+cout<<"Introduce el primer número: "&lt;&lt;endl;
+cin>>n1;
+cout<<"Introduce el segundo número: "&lt;&lt;endl;
+cin>>n2;
+cout<<"Seleccione una opción ingresando un número:"&lt;&lt;endl;
+cout<<"1: Suma."&lt;&lt;endl;
+cout<<"2: Resta."&lt;&lt;endl;
+cout<<"3: Multiplicación."&lt;&lt;endl;
+cout<<"4: División."&lt;&lt;endl;
+cin >> opcion;
+switch(opcion)
+{
+  case 1: 
+    suma=n1+n2;
+    cout<<"El resultado de la suma es: "&lt;&lt;suma&lt;&lt;endl;
+  break;
+  case 2:
+    resta=n1-n2;
+    cout<<"El resultado de la resta es: "&lt;&lt;resta&lt;&lt;endl;
+  break;
+  case 3: 
+    multiplicacion=n1*n2;
+    cout<<"El resultado de la multiplicación es: "&lt;&lt;multiplicacion&lt;&lt;endl;
+  break;
+  case 4: 
+    division=n1/n2;
+    cout<<"El resultado de la división es: "&lt;&lt;division&lt;&lt;endl;
+  break;
+  default: cout << "Usted a ingresado una opción incorrecta.";
+}
+}
             </pre>
                                 </div>
 
@@ -252,22 +216,33 @@ else{
                                     <script>
 
                                         function numero_pos_neg_cero() {
-                                            var n = prompt("Introduzca cualquier numero", "");
-                                            if (n > 0 && n != null) {
-                                                alert("El numero es positivo");
-                                            } else if (n < 0) {
-                                                alert("El numero es negativo");
-                                            } else if (n == 0) {
-                                                alert("El numero es cero");
+                                            alert("Introduzca los siguientes números, para luego escoger que operación matemática a realizar.");
+                                            var n1= parseInt(prompt("Introduzca el primer número", ""));
+                                            var n2 = parseInt(prompt("Introduzca el segundo número", ""));
+                                            alert("1:Suma 2: Resta 3:Multiplicación 4:División");
+                                          var o= prompt("Seleccione una opción ingresando un número:");
+                                            switch(o){
+                                              case '1': 
+                                              alert("El resultado de la suma es: "+(n1+n2));
+                                              break;
+                                              case '2': 
+                                              alert("El resultado de la resta es: "+(n1-n2));
+                                              break;
+                                              case '3': 
+                                              alert("El resultado de la multiplicación es: "+(n1*n2));
+                                              break;
+                                              case '4': 
+                                              alert("El resultado de la división es: "+(n1/n2));
+                                              break;
+                                              default: alert("Usted a ingresado una opción incorrecta.");
                                             }
                                         }
                                     </script>
 
                                     <!--Codigo Javascript-->
-
-
                                 </div>
-
+                                <br><br>
+                                    Espero que haya sido un tanto claro con esto, si no es así, recuerda que pueden preguntar en la sección de comentarios y con gusto te voy a responder o incluso modificar esta sección para responder tu cuestión.
                                 <!--<div class="mdl-tabs__panel" id="ejemplo">
 
                                 </div>-->
@@ -282,15 +257,15 @@ else{
                     <div class="mdl-card__actions mdl-card--border navigation-links-buttons">
 
                         <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent to-the-rigth"
-                           href="../Variableyalgoritmo/v-a.html" title="TITULO DEL TEMA">
+                           href="../c++/sintaxis.html" title="TITULO DEL TEMA">
                             Tema Anterior
                         </a>
 
                         <div class="mdl-layout-spacer"></div>
 
                         <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent to-the-rigth"
-                           href="../Estructurasderepeticion/repitas.html" title="TITULO DEL TEMA">
-                            Siguiente Tema
+                           href="#">
+                            En contrucción
                         </a>
                     </div>
                   </div>
@@ -316,8 +291,8 @@ else{
                               */
                               
                               var disqus_config = function () {
-                              this.page.url = 'http://learn-prog.github.io/temas/Sentenciaif-else-elseif/ifelseif.html'; // Replace PAGE_URL with your page's canonical URL variable
-                              this.page.identifier = 'temas/condiciones/sentencias/if-else'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                              this.page.url = 'http://learn-prog.github.io/temas/switch/switch.html'; // Replace PAGE_URL with your page's canonical URL variable
+                              this.page.identifier = 'temas/switch/switch'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
                               };
                               
                               (function() { // DON'T EDIT BELOW THIS LINE
