@@ -159,7 +159,7 @@ default: //Bloque de instrucciones por defecto;
                             <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
                                 <div class="mdl-tabs__tab-bar">
                                     <a href="#codigo" class="mdl-tabs__tab">Código</a>
-                                    <a href="#" class="mdl-tabs__tab" onclick="numero_pos_neg_cero()">Verificar</a>
+                                    <a href="#" class="mdl-tabs__tab" onclick="menu_calc()">Verificar</a>
                                     <!--<a href="#ejemplo" class="mdl-tabs__tab">Ejemplo</a>-->
                                 </div>
 
@@ -215,7 +215,7 @@ switch(opcion)
 
                                     <script>
 
-                                        function numero_pos_neg_cero() {
+                                        /*function numero_pos_neg_cero() {
                                             alert("Introduzca los siguientes números, para luego escoger que operación matemática a realizar.");
                                             var n1= parseInt(prompt("Introduzca el primer número", ""));
                                             var n2 = parseInt(prompt("Introduzca el segundo número", ""));
@@ -236,7 +236,34 @@ switch(opcion)
                                               break;
                                               default: alert("Usted a ingresado una opción incorrecta.");
                                             }
+                                        }*/
+                                        function menu_calc() {
+                                          //alert("Introduzca los siguientes números, para luego escoger que operación matemática a realizar.");
+                                          do {
+                                            var n1 = Number(prompt("Introduzca el primer número", ""));
+                                            var n2 = Number(prompt("Introduzca el segundo número", ""));
+                                            //alert("Introduzca el numero correspondiente a la opcion:\n\n1:Suma \n2: Resta \n3:Multiplicación \n4:División");
+                                            var o = prompt("Introduzca el numero correspondiente a la opcion:\n\n1: Suma \n2: Resta \n3: Multiplicación \n4: División", '');
+                                            switch (o) {
+                                              case '1':
+                                                alert("El resultado de la suma es: " + (n1 + n2));
+                                                break;
+                                              case '2':
+                                                alert("El resultado de la resta es: " + (n1 - n2));
+                                                break;
+                                              case '3':
+                                                alert("El resultado de la multiplicación es: " + (n1 * n2));
+                                                break;
+                                              case '4':
+                                                alert("El resultado de la división es: " + (n1 / n2));
+                                                break;
+                                              default:
+                                                alert("Usted a ingresado una opción incorrecta.");
+                                            }
+                                          }
+                                          while(confirm('Desea repetir el programa')===true)
                                         }
+                                        //menu_calc();
                                     </script>
 
                                     <!--Codigo Javascript-->
